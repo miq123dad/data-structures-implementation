@@ -64,7 +64,7 @@ public:
     void printList() {
         Node* temp = head;
         while (temp != nullptr) {
-            cout << temp->data << " ? ";
+            cout << temp->data << " → ";
             temp = temp->next;
         }
         cout << "NULL"<<endl;
@@ -100,5 +100,4 @@ int main() {
 
     return 0;
 }
-
 

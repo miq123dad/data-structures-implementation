@@ -6,15 +6,13 @@ This repository contains C++ implementations of fundamental data structures buil
 
 ## 🧠 Implemented Data Structures
 
-### ✅ Day 1
+### ✅ Day 1 – Basics
 
 #### 1. Dynamic Array
-
 - **Path:** `dynamic_array/DynamicArray.cpp`
 - **Description:** Custom implementation of a dynamic array with automatic resizing, insertion, deletion, and traversal functionalities.
 
 #### 2. Singly Linked List
-
 - **Path:** `linked_list/SinglyLinkedList.cpp`
 - **Description:** A singly linked list supporting:
   - Insertion at head and tail
@@ -22,44 +20,55 @@ This repository contains C++ implementations of fundamental data structures buil
   - Traversal and display
 
 #### 3. Stack
-
 - **Using Array**
   - **Path:** `stack/StackArray.cpp`
   - **Description:** A stack implemented using a fixed-size array with push, pop, peek, and isEmpty operations.
-
 - **Using Linked List**
   - **Path:** `stack/StackLinkedList.cpp`
   - **Description:** A dynamic stack using singly linked list logic for efficient push/pop in O(1) time.
 
 ---
 
-### ✅ Day 2
+### ✅ Day 2 – Intermediate Linked Structures
 
 #### 4. Queue
-
 - **Using Array**
   - **Path:** `queue/QueueArray.cpp`
   - **Description:** A simple queue implemented with an array using front and rear pointers.
-
 - **Using Linked List**
   - **Path:** `queue/QueueLinkedList.cpp`
   - **Description:** Queue using singly linked list with enqueue at tail and dequeue at head.
 
 #### 5. Doubly Linked List
-
 - **Path:** `linked_list/DoublyLinkedList.cpp`
 - **Description:** A list with forward and backward links, supporting insertion and deletion from both ends.
 
 #### 6. Circular Linked List
-
 - **Path:** `linked_list/CircularLinkedList.cpp`
 - **Description:** A circular version of a singly linked list where the tail points back to the head.
 
 ---
 
+### ✅ Day 3 – Behavioral Interview Preparation
+
+#### 👨‍💼 Exponent Preparation
+- Registered on [Exponent](https://www.tryexponent.com)
+- Scheduled a **mock behavioral interview**
+- Prepared **STAR responses** for the following 5 common behavioral questions:
+  1. Tell me about a time you faced a challenge.
+  2. Tell me about a time you worked on a team.
+  3. What’s your greatest strength?
+  4. What’s your biggest weakness?
+  5. Why should we hire you?
+
+#### 📄 File:
+- Responses saved in: `behavioral_responses.md`
+
+---
+
 ## 🔧 How to Compile & Run
 
-Use the following commands in your terminal to compile and run individual files:
+Use the following commands in your terminal to compile and run each file:
 
 ### Day 1 Commands
 
@@ -79,23 +88,3 @@ g++ -o stack_array_app stack/StackArray.cpp
 # Stack using Linked List
 g++ -o stack_linked_app stack/StackLinkedList.cpp
 ./stack_linked_app
-
-
-### Day 2 Commands
-
-# Queue using Array
-g++ -o queue_array_app queue/QueueArray.cpp
-./queue_array_app
-
-# Queue using Linked List
-g++ -o queue_linked_app queue/QueueLinkedList.cpp
-./queue_linked_app
-
-# Doubly Linked List
-g++ -o doubly_linked_list_app linked_list/DoublyLinkedList.cpp
-./doubly_linked_list_app
-
-# Circular Linked List
-g++ -o circular_linked_list_app linked_list/CircularLinkedList.cpp
-./circular_linked_list_app
-

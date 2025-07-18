@@ -1,6 +1,3 @@
-# 📘 Data Structures in C++
-
-This repository contains C++ implementations of fundamental data structures built from scratch as part of my one-week intensive training with **OppoTrain**.
 
 ---
 
@@ -9,82 +6,101 @@ This repository contains C++ implementations of fundamental data structures buil
 ### ✅ Day 1 – Basics
 
 #### 1. Dynamic Array
+
 - **Path:** `dynamic_array/DynamicArray.cpp`
-- **Description:** Custom implementation of a dynamic array with automatic resizing, insertion, deletion, and traversal functionalities.
+- **Description:** Custom implementation of a dynamic array with:
+  - Automatic resizing (doubling strategy)
+  - Insertion, deletion
+  - Traversal
+- **Time Complexities:**
+  - Access: `O(1)`
+  - Insert (end): `Amortized O(1)`
+  - Delete: `O(n)`
+- **Space Complexity:** `O(n)`
 
 #### 2. Singly Linked List
+
 - **Path:** `linked_list/SinglyLinkedList.cpp`
-- **Description:** A singly linked list supporting:
-  - Insertion at head and tail
-  - Deletion by value
-  - Traversal and display
+- **Features:**
+  - Insert at head/tail
+  - Delete by value
+  - Traverse and print
+- **Time Complexities:**
+  - Insert/Delete: `O(1)` at head, `O(n)` at tail
+  - Search/Traverse: `O(n)`
+- **Space Complexity:** `O(n)`
 
 #### 3. Stack
+
 - **Using Array**
   - **Path:** `stack/StackArray.cpp`
-  - **Description:** A stack implemented using a fixed-size array with push, pop, peek, and isEmpty operations.
+  - **Time:** Push/Pop/Peek: `O(1)`
+  - **Space:** `O(n)`
 - **Using Linked List**
   - **Path:** `stack/StackLinkedList.cpp`
-  - **Description:** A dynamic stack using singly linked list logic for efficient push/pop in O(1) time.
+  - **Time:** Push/Pop: `O(1)`
+  - **Space:** `O(n)`
 
 ---
 
 ### ✅ Day 2 – Intermediate Linked Structures
 
 #### 4. Queue
+
 - **Using Array**
   - **Path:** `queue/QueueArray.cpp`
-  - **Description:** A simple queue implemented with an array using front and rear pointers.
+  - **Time:** Enqueue/Dequeue: `O(1)` (if circular), else `O(n)`
+  - **Space:** `O(n)`
 - **Using Linked List**
   - **Path:** `queue/QueueLinkedList.cpp`
-  - **Description:** Queue using singly linked list with enqueue at tail and dequeue at head.
+  - **Time:** Enqueue/Dequeue: `O(1)`
+  - **Space:** `O(n)`
 
 #### 5. Doubly Linked List
+
 - **Path:** `linked_list/DoublyLinkedList.cpp`
-- **Description:** A list with forward and backward links, supporting insertion and deletion from both ends.
+- **Features:** 
+  - Forward/backward traversal
+  - Insert/delete from both ends
+- **Time Complexities:**
+  - Insert/Delete: `O(1)` at ends, `O(n)` by value
+  - Traverse: `O(n)`
+- **Space Complexity:** `O(n)`
 
 #### 6. Circular Linked List
+
 - **Path:** `linked_list/CircularLinkedList.cpp`
-- **Description:** A circular version of a singly linked list where the tail points back to the head.
+- **Description:** Tail node links back to head, forming a cycle
+- **Time Complexities:**
+  - Insert/Delete: `O(1)` at head/tail
+  - Traverse: `O(n)`
+- **Space Complexity:** `O(n)`
 
 ---
 
 ### ✅ Day 3 – Behavioral Interview Preparation
 
 #### 👨‍💼 Exponent Preparation
+
 - Registered on [Exponent](https://www.tryexponent.com)
-- Scheduled a **mock behavioral interview**
-- Prepared **STAR responses** for the following 5 common behavioral questions:
-  1. Tell me about a time you faced a challenge.
-  2. Tell me about a time you worked on a team.
-  3. What’s your greatest strength?
-  4. What’s your biggest weakness?
-  5. Why should we hire you?
+- Completed mock behavioral interview prep
+- Created STAR-format answers for 5 popular behavioral questions
 
 #### 📄 File:
-- Responses saved in: `behavioral_responses.md`
+
+- All responses stored in: `behavioral_responses.md`
 
 ---
 
-## 🔧 How to Compile & Run
+## 💡 How to Compile & Run
 
-Use the following commands in your terminal to compile and run each file:
+Use these commands to build and run each file:
 
-### Day 1 Commands
+### Example (Linux/macOS terminal or Git Bash for Windows):
 
 ```bash
-# Dynamic Array
-g++ -o dynamic_array_app dynamic_array/DynamicArray.cpp
-./dynamic_array_app
-
-# Singly Linked List
-g++ -o linked_list_app linked_list/SinglyLinkedList.cpp
-./linked_list_app
-
-# Stack using Array
+# Compile
 g++ -o stack_array_app stack/StackArray.cpp
-./stack_array_app
 
-# Stack using Linked List
-g++ -o stack_linked_app stack/StackLinkedList.cpp
-./stack_linked_app
+# Run
+./stack_array_app

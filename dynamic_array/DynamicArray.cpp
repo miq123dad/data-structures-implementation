@@ -62,7 +62,7 @@ public:
     }
 };
 
-// Test the Dynamic Array
+// Test The Dynamic Array
 int main() {
     DynamicArray arr;
 
